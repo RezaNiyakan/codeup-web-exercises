@@ -14,5 +14,10 @@ console.log(returnOfConfirm);
 var favoriteNuMetalBand = prompt("What's your favorite nu-metal band?");
 console.log("Ha,ha,you like " + favoriteNuMetalBand + "!");
 
+var leastFavoriteSoda = prompt("What is your least favorite soda?");
+var favoriteSoda = prompt("What's your favorite soda");
+
+
+
 
 
