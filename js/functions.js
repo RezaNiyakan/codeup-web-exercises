@@ -1,4 +1,3 @@
-"use strict";
 (function() {
     /**
      * TODO:
@@ -112,6 +111,11 @@
     var originalPrice = 100;
     var discountPercent = .2;
     var applyDiscount = applyDiscount(originalPrice, discountPercent)
+
+   // Make a function called sayHowdy() which console.logs the string “Howdy!”
+    //Test this function by directly calling sayHowdy()
+    //Remember this function does not need a defined return value
+
 
 })();
 

@@ -1,7 +1,7 @@
 "use strict";
 (function() {
     //code goes here
-})();
+})()
 
 
 // A function is a block of reusable code that performs a specific task.
@@ -14,6 +14,5 @@
 // - parseFloat();
 // - parseInt();
 
-function todays
 
-alert("Hello from Codeup");
+
