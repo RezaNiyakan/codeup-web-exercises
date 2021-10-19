@@ -41,7 +41,7 @@
         var checkForThree = num % 3;
         var checkForFive = num % 5;
 
-    if (checkForThree == 0) && (checkForFive == 0)
+    if (checkForThree == 0 && checkForFive == 0)
         console.log ("FizzBuzz");
     else if (checkForThree == 0)
         console.log ("Fizz");
@@ -50,8 +50,6 @@
     else
         console.log(num);
     }
-
-
 })();
 
 
