@@ -35,7 +35,7 @@
     console.log(typeCheck(4 + '4'));
 
 
-    //write a program that console.logs 1 thru 100, (fizz buzz)
+    // 10/19/21 write a program that console.logs 1 thru 100, (fizz buzz)
 
     for (var num = 1; num <= 100; num ++ )   {
         var checkForThree = num % 3;
@@ -50,6 +50,13 @@
     else
         console.log(num);
     }
+
+    // 10/20/21 Create a function named secondToLast that accepts an array as an
+    // argument and will return the second to last element of the array.
+        function secondToLast(arr) {
+            return arr[arr.length - 2];
+    }
+        console.log(secondToLast(["First", "Second", "Not Last", "Last"]));
 })();
 
 
