@@ -57,6 +57,19 @@
             return arr[arr.length - 2];
     }
         console.log(secondToLast(["First", "Second", "Not Last", "Last"]));
+
+
+    // 10/21/21 Write a function named 'moveToEnd' that takes in an array, and returns
+    // the array with the original first index moved to the last index of the array.
+    //Example:
+    //moveToEnd([1, 2, 3, 4]) 		  // returns [2, 3, 4, 1];
+    //moveToEnd(['roll', 'rock', 'and']  // returns ['rock', 'and', 'roll'];
+
+            function moveToEnd(arr) {
+                var removedElement = arr.shift();
+                arr.push(removedElement);
+                return arr;
+            }
 })();
 
 
