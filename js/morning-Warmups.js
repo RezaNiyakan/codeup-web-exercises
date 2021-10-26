@@ -74,7 +74,7 @@
             // 10/25/21
             var Pikachu =   {
                 name: "pikachu",
-                description: "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy."
+                description: "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
                 height: {
                     feet: 1,
                     inches: 4
