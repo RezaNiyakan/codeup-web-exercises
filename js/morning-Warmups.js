@@ -70,6 +70,24 @@
                 arr.push(removedElement);
                 return arr;
             }
+
+            // 10/25/21
+            var Pikachu =   {
+                name: "pikachu",
+                description: "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy."
+                height: {
+                    feet: 1,
+                    inches: 4
+                },
+                color: "yellow",
+                age: "25",
+                type: "electricity",
+                weakness: "ground",
+                gender: "male",
+                category: "mouse"
+
+            }
+
 })();
 
 
