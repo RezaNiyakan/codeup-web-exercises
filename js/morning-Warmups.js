@@ -124,6 +124,7 @@
                 return bucket;
             }
             console.log(filterForCanadiens(wrestlers));
+
 })();
 
 
