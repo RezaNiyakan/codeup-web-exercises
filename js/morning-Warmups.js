@@ -88,6 +88,42 @@
 
             }
 
+            // 10/26/21
+   // Create a function that accepts an array as an argument and that returns an array
+    //of objects that have a nationality property of “Canadian”.
+
+    var wrestlers = [
+        {
+            name: "Bret Hart",
+            nationality: "Canadian"
+        }, {
+            name: "Shawn Michaels",
+            nationality: "American"
+        }, {
+            name: "Christian Cage",
+            nationality: "Canadian"
+        }, {
+            name: "Keiji Mutoh",
+            nationality: "Japanese"
+        }, {
+            name: "Eddy Guerrero",
+            nationality: "American"
+        }, {
+            name: "Owen Hart",
+            nationality: "Canadian"
+        }
+    ];
+            //Davids answer
+            function filterForCanadiens(arr)    {
+                var bucket = [];
+                arr.forEach(function (element)  {
+                    if (element.nationality === "Canadien") {
+                        bucket.push(element);
+                    }
+                });
+                return bucket;
+            }
+            console.log(filterForCanadiens(wrestlers));
 })();
 
 
