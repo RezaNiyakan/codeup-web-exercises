@@ -19,7 +19,9 @@
     console.log(hadBreakfastMessage);
 
 
-    //Write a function called 'typeCheck' that takes an input and returns a string of the data type entered. If the data type is a string, return the string "Haha, it's a string of string!"
+    //Write a function called 'typeCheck' that takes an input and returns a string of the
+    // data type entered. If the data type is a string, return the string "Haha,
+    // it's a string of string!"
         function typeCheck(parameter)   {
             if (typeof parameter === 'string') {
                 return "Haha, it's a string of a string!";
@@ -125,6 +127,16 @@
             }
             console.log(filterForCanadiens(wrestlers));
 
+         //10/27/21
+    //  Find the area of a circle, and round it to the nearest whole number using
+    //  the math object
+    // var circle =    {
+       // radius 36
+    //}
+// Area of a circle = PI * radius^2
+    var area = Math.round(Math.PI * (Math.pow(circle.radius, 2)));
+
+    console.log(area);
 })();
 
 

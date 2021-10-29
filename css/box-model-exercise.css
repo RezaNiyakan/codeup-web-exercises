@@ -1,0 +1,107 @@
+body{
+    background-color: black;
+    border: solid; color: white;
+}
+
+.recipe {
+
+}
+
+.recipe-piece-1   {
+    background-color: tan;
+    border-style: dashed;
+    height: border-box;
+    width: 300px;
+    padding: 30px 0px;
+    border-radius: 5%;
+    border-color: white;
+    border-spacing: unset;
+    margin: 2px auto;
+    box-sizing: initial;
+    text-align: center;
+
+}
+
+.recipe-piece-2   {
+    background-color: purple;
+    border-style: dashed;
+    height: border-box;
+    width: 300px;
+    padding: 30px 0px;
+    border-radius: 30%;
+    border-color: white;
+    border-spacing: unset;
+    margin: 2px auto;
+    box-sizing: initial;
+    text-align: center;
+}
+
+.recipe-piece-3   {
+    background-color: orange;
+    border-style: dashed;
+    height: border-box;
+    width: 300px;
+    padding: 30px 0px;
+    border-radius: 30%;
+    border-color: white;
+    border-spacing: unset;
+    margin: 2px auto;
+    box-sizing: initial;
+    text-align: center;
+}
+
+.recipe-piece-4  {
+    background-color: orange;
+    border-style: dashed;
+    height: border-box;
+    width: 300px;
+    padding: 30px 0px;
+    border-radius: 30%;
+    border-color: white;
+    border-spacing: unset;
+    margin: 2px auto;
+    box-sizing: initial;
+    text-align: center;
+}
+
+.recipe-piece-5   {
+    background-color: purple;
+    border-style: dashed;
+    height: border-box;
+    width: 300px;
+    padding: 30px 0px;
+    border-radius: 30%;
+    border-color: white;
+    border-spacing: unset;
+    margin: 2px auto;
+    box-sizing: initial;
+    text-align: center;
+}
+
+.recipe-piece-6   {
+    background-color: tan;
+    border-style: dashed;
+    height: border-box;
+    width: 300px;
+    padding: 30px 0px;
+    border-radius: 5%;
+    border-color: white;
+    border-spacing: unset;
+    margin: 2px auto;
+    box-sizing: initial;
+    text-align: center;
+}
+
+.container   {
+    border: 10px white; /* size,style,color */
+    width: 30%;
+    margin: 10px auto;
+}
+
+p   {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1px;
+    margin-inline-end: 1px;
+}
