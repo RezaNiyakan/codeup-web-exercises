@@ -1,0 +1,60 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+
+.message{
+    border: 1px lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px auto;
+    width: 80%;
+}
+
+.message-info   {
+    background-color: #D0DDFC;
+    color: #5B5BA8;
+    height: fit-content;
+    width: 1000px;
+    padding: 10px;
+    border-radius: 2%;
+    border-color: black;
+    margin: 10px auto;
+
+}
+
+.message-success    {
+    background-color: #D6F2DC;
+    color: #5E926B;
+    height: fit-content;
+    width: 1000px;
+    /*width: calc(100% - 20px);*/
+    padding: 10px;
+    border-radius: 2%;
+    margin: 10px auto;
+}
+
+.message-warning    {
+    background-color: #FCFACE;
+    color: #A0934B;
+    height: fit-content;
+    width: 1000px;
+    /*width: calc(100% - 20px);*/
+    padding: 10px;
+    border-radius: 2%;
+    margin: 10px auto;
+}
+
+.message-error  {
+    background-color: #F4D4D7;
+    color: #813240;
+    height: fit-content;
+    width: 1000px;
+    /*width: calc(100% - 20px);*/
+    padding: 10px;
+    border-radius: 2%;
+    margin: 10px auto;
+}
