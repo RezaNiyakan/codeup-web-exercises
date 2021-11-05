@@ -1,0 +1,67 @@
+/**{*/
+/*    margin: 0px;*/
+/*    padding: 0px;*/
+/*}*/
+
+.jumbotron{
+    background-image: url('../img/pizza.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+   justify-content: center;
+}
+
+h1{
+    text-align: center;
+    background-color: rgba(225, 255, 255, 0.5);
+
+}
+
+h5{
+    color: black;
+}
+
+/*.tab-pane{*/
+/*    background-color: royalblue;*/
+/*}*/
+
+svg{
+    float: right;
+}
+
+
+nav{
+   display: flex;
+    align-items: center;
+    margin: 87px;
+    margin-top: auto;
+    margin-bottom: 15px;
+
+}
+
+
+
+.build-pizza>h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.inline-image{
+    height: 20px;
+
+}
+
+.btn-primary, .btn-primary:focus, .btn-primary:active, .open>.dropdown-toggle.btn-primary{
+    color: snow;
+    background-color: dimgray;
+    border-color: black;
+}
+
+/*.card-body{*/
+/*    background-color: royalblue;*/
+/*    color: white;*/
+/*}*/
+
+.d-sm-none .d-md-block{
+
+}
