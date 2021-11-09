@@ -1,0 +1,40 @@
+/*h1 {*/
+/*display: flex;*/
+/*    justify-content: center;*/
+/*    font-family: sans-serif;*/
+/*    font-weight: bold;*/
+/*}*/
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+h3{
+    color: royalblue;
+}
+
+/*h3>li{*/
+/*    margin: 500px;*/
+/*    list-style-type: circle;*/
+/*}*/
+
+/*hr{*/
+/*    font-weight: bold;*/
+/*    color: green;*/
+/*    font-size: x-large;*/
+/*}*/
+
+/*@media screen and (min-width: 768px) {*/
+/*}*/
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+/*!* Small devices (phones and pocket devices, 576 and up) *!*/
+/*@media screen and (min-width:576px) { !* ... *! }*/
+
