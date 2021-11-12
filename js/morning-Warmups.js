@@ -286,4 +286,14 @@
     }
         myCharacter.abilities.attack(enemy);
 
+    //..11/12/21
+    // Write a function in javascript that takes in an array and returns a
+    // random element from the array
+
+        function randomEl(arr)  {
+            return arr[Math.floor(Math.random() * arr.length)]
+        }
+        console.log(randomEl(["spurs", "lakers", "bulls"]));
+
+
 })();
