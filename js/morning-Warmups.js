@@ -295,5 +295,4 @@
         }
         console.log(randomEl(["spurs", "lakers", "bulls"]));
 
-
 })();
