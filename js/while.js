@@ -1,10 +1,11 @@
-"use strict"
+// "use strict"
 (function() {
 
 
 //Create a while loop that uses console.log() to create the output shown below.
 
     var multipliedNum = 2;
+
     while (multipliedNum <= 65536) {
         console.log(multipliedNum);
         multipliedNum *= 2;
@@ -36,22 +37,23 @@
     // the amount of cones sold to each person. This is a way get the random numbers for
     // this exercise.
 
-    //This how you get a random number between 1 and 50.
-    var allCones = Math.floor(math.random() * 50) + 50;
-    console.log("Opening up shop! I've got " + allCones + " to sell!");
-    do {
-        //This expression will generate a number between 1 and 5.
-        var conesToBuy = Math.floor(Math.random() * 5) + 1;
-
-    if (conesToBuy <= allCones) {
-        allCones -= conesToBuy;
-        console.log("Customer wants to buy " + conesToBuy + " cones, I have " + allCones + " comes left in stock.")
-    } else {
-        console.log("Sorry pal, we can't sell you " + conesToBuy + "cones. We only have " + allCones + " cones left in stock.")
-    }
-    while (allCones !== 0) {
-        console.log("Closing up shop!");
-    }
-
-
+    // This how you get a random number between 1 and 50.
+//     var allCones = Math.floor(Math.random() * 50) + 50;
+//     console.log("Opening up shop! I've got " + allCones + " to sell!");
+//     do {
+//         //This expression will generate a number between 1 and 5.
+//         var conesToBuy = Math.floor(Math.random() * 5) + 1;
+//
+//
+//         if (conesToBuy <= allCones) {
+//             allCones -= conesToBuy;
+//             console.log("Customer wants to buy " + conesToBuy + " cones, I have " + allCones + " comes left in stock.");
+//         } else {
+//             console.log("Sorry pal, we can't sell you " + conesToBuy + "cones. We only have " + allCones + " cones left in stock.");
+//         }
+//         while (allCones !== 0) {
+//             console.log("Closing up shop!");
+//         }
+//
+//
 })();
