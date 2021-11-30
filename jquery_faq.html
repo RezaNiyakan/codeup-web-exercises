@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery_faq</title>
+    <style>
+    .invisible {
+    visibility: hidden;
+    }
+    .highliter  {
+
+    }
+    </style>
+</head>
+<body>
+    <h2>10 Facts about National Parks</h2>
+    <dl>
+        <dt>Grand Canyon</dt>
+        <dd class="invisible">The Grand Canyon, in Grand Canyon National Park in Arizona, is known as one of the Seven Natural Wonders of the World.
+        </dd>
+        <dt>Everglades</dt>
+        <dd class="invisible">Everglades National Park protects more than 25% of Florida's original everglades (subtropical wetlands).
+        </dd>
+        <dt>Yellowstone</dt>
+        <dd class="invisible">Yellowstone National Park (in Wyoming, Idaho, and Montana) is the oldest U.S. national park, founded in 1872.
+        </dd>
+        <dt>Acres</dt>
+        <dd class="invisible">In the National Park System, there are 407 sites covering more than 84 million acres of land.
+        </dd>
+        <dt>Applachian Trail</dt>
+        <dd class="invisible">The Appalachian Trail is a 2,185 mile long public footpath that traverses the scenic, wooded, pastoral, wild, and culturally resonant lands of the Appalachian Mountains.
+        </dd>
+        <dt>Foot Traffic</dt>
+        <dd class="invisible">In 2014, more than 290 million people visited the National Parks.
+        </dd>
+        <dt>Carlsbad Caverns</dt>
+        <dd class="invisible">Carlsbad Caverns National Park in New Mexico is home to the nation's deepest cave, which is 1,593 feet deep.
+        </dd>
+        <dt>Crater Lake</dt>
+        <dd class="invisible">At 1,932 feet deep, Crater Lake National Park in Oregon is the deepest lake in the U.S.
+        </dd>
+        <dt>Mount Rainier</dt>
+        <dd class="invisible">Mount Rainier is the most glaciated peak in the contiguous U.S. with 26 major glaciers.
+        </dd>
+        <dt>Hot Springs National Park</dt>
+        <dd class="invisible">Originally established by Congress as Hot Springs Reservation in 1832 and later becoming a national park in 1921, Hot Springs National Park represents the oldest protected area in the National Park System.
+        </dd>
+    </dl>
+    <hr>
+    <div>
+        <h3>Sequoia National Park</h3>
+        <ul>
+            <li>Located in Visalia, California.</li>
+            <li>The park has over 800 miles in trails.</li>
+            <li>The first inhabitants known to have inhabited the area now designated as Sequoia National Park were the Monache Indians.</li>
+            <li>Has the largest living single-stem tree in the world, the wonderfully named General Sherman. The tree is approximately 275 feet tall and weighs approximately 1,900 metric tons.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Badlands</h3>
+        <ul>
+            <li>Located in South Dakota.</li>
+            <li>The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies.</li>
+            <li>The wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs.</li>
+            <li>The White River Badlands contain the largest assemblage of known late Eocene and Oligocene mammal fossils.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Death Valley</h3>
+        <ul>
+            <li>Death Valley is home to Badwater Basin, which has the lowest elevation in North America.</li>
+            <li>This park contains canyons, badlands, sand dunes, and mountain ranges.</li>
+            <li>Historic mines can be located here as well.</li>
+            <li>Has the hottest, lowest and driest location in the US.</li>
+        </ul>
+    </div>
+
+    <button class="yellow" type="submit">Yellow</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('dl').click(function () {
+                $('dd').toggleClass('invisible');
+            });
+            //     -Add highliter
+            // $('dt').click(function () {
+            //     $(this).toggleClass('highliter');
+            // })
+        });
+
+        $('.yellow').click(function () {
+            $('ul').each( function () {
+                $(this).children().last().css('background-color', 'yellow');
+            });
+        });
+
+        $('h3').click(function () {
+            $(this).next().each( function() {
+                $(this).children().css('font-weight', 'bold');
+            });
+        });
+
+        $('li').click(function () {
+            $('ul').each(function () {
+                $(this).children().first().css('color', 'blue');
+            });
+        });
+    </script>
+
+<!--    $('dl').click(function () {-->
+<!--    $('dd').toggleClass('invisible');-->
+
+<!--    });-->
+</body>
+</html>
