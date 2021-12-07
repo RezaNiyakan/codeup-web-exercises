@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mapbox_maps_api</title>
+    <h1>Welcome to my Mapbox API</h1>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+<select id="zoom-select">
+    <option selected disabled>Zoom Level</option>
+    <option value="5">Zoom Level 5</option>
+    <option value="15">Zoom Level 15</option>
+    <option value="20">Zoom Level 20</option>
+</select>
+<!-- The HTML element that for the Mapbox container -->
+<div id='map' style='width: 800px; height: 600px;'></div>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+<script>
+
+    mapboxgl.accessToken = MAPBOX_KEY;
+    var map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-98.4683, 29.5312], // starting position [lng, lat]
+        zoom: 10 // starting zoom
+    });
+
+    // Create a marker on your map of the exact location of your favorite restaurant.
+    // Set the zoom to allow for best viewing distance.
+    // var fogoDeChao = new mapboxgl.Marker()
+    //     .setLngLat([-98.4866616, 29.4231442])
+    //     .setDraggable(true)
+    //     .addTo(map);
+    //
+    // Create a popup with the name of the restaurant.
+    // var popup = new mapboxgl.Popup()
+    // .setLngLat(fogoDeChao.getLngLat())
+    // .setHTML('<h1>Fogo de Chao</h1>')
+    // .addTo(map);
+
+
+    var restaurants = [
+        {
+            name: "Fogo de Chao",
+            address: "849 E Commerce St #393, San Antonio, TX 78205"
+            // coordinates: [-98.4866616, 29.4231442]
+        },
+        {
+            name: "Crystals Cafe",
+            address: "2420 N Zarzamora St, San Antonio, TX 78201"
+            // coordinates: [-98.4866616, 29.4231442]
+        },
+        {
+            name: "China Star",
+            address: "1647 Babcock Rd, San Antonio, TX 78229"
+            // coordinates: [-98.5715419, 29.4935562]
+        }
+    ]
+
+    restaurants.forEach(function (restaurant) {
+        geocode(restaurant.address, MAPBOX_KEY).then(function(coordinates) {
+
+            var marker = new mapboxgl.Marker()
+                // .setLngLat(coordinates)
+                .setLngLat([-98.4866616, 29.4231442])
+                .addTo(map);
+                // .setPopup(popup);
+
+            var popup = new mapboxgl.Popup()
+                .setHTML(restaurant.name)
+                .setLngLat([-98.489615, 29.426827])
+                .addTo(map)
+
+            marker.setPopup(popup)
+        });
+    })
+
+
+
+    var zoomSelect = document.getElementById('zoom-select');
+    console.log(zoomSelect);
+
+    zoomSelect.addEventListener('change', function(){
+        console.log('Zoom level change.');
+        var zoomValue = zoomSelect.options[zoomSelect.selectedIndex].value;
+
+        map.setZoom(zoomValue);
+    });
+
+</script>
+</body>
+</html>
